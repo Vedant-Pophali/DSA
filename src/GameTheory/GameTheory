@@ -1,0 +1,12 @@
+Game theory on LeetCode involves solving problems where players make optimal decisions to maximize gains or minimize losses. It often includes:
+
+1. **Optimal Play:** Both players aim for the best possible outcome for themselves.
+2. **Dynamic Programming (DP):** Use DP to represent the game's state (e.g., maximum score for a range of moves).
+3. **Minimax:** Simulate decisions for both players (maximizing and minimizing scores).
+4. **Base Cases:** Solve for simple scenarios (e.g., one move left).
+5. **Common Patterns:**
+   - **Stone Games:** Maximize score by picking stones from piles.
+   - **Nim Game:** Analyze winning/losing positions based on available moves.
+   - **Grid Games:** Players compete by moving in grids to collect scores.
+
+In short, analyze strategies, simulate outcomes, and use DP or recursion to solve optimally.
