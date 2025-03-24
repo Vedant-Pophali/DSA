@@ -1,14 +1,15 @@
 package LinkedList.LeetCode;
 
 public class Intersection {
-     public static class ListNode {
-          int val;
-          ListNode next;
-          ListNode(int x) {
-              val = x;
-              next = null;
-          }
-      }
+    public  static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
+    }
+
     public static class Solution {
         public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
             int m = findLength(headA);
