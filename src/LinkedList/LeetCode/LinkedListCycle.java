@@ -1,8 +1,9 @@
 package LinkedList.LeetCode;
 
-//Hare and Tortoise Algorithm
-//Floyd's Cycle Detection Algorithm
+// Hare and Tortoise Algorithm
+// Floyd's Cycle Detection Algorithm
 public class LinkedListCycle {
+
     public static class ListNode {
         int val;
         ListNode next;
@@ -14,10 +15,14 @@ public class LinkedListCycle {
     }
 
     public static class Solution {
-        public boolean hasCycle(ListNode head) {
+
+        // Detects cycle in a linked list
+        public static boolean hasCycle(ListNode head) {
             if (head == null || head.next == null) return false;
+
             ListNode slow = head;
             ListNode fast = head;
+
             while (fast != null && fast.next != null) {
                 slow = slow.next;
                 fast = fast.next.next;
@@ -25,21 +30,40 @@ public class LinkedListCycle {
                     return true;
                 }
             }
+
             return false;
         }
+
         public static void main(String[] args) {
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(2);
-            head.next.next = new ListNode(3);
-            head.next.next.next = new ListNode(4);
-            head.next.next.next.next = new ListNode(5);
 
-            // Creating a cycle for testing
-            head.next.next.next.next.next = head.next.next;
+            // Test Case 1: With a cycle (cycle at node 3)
+            ListNode head1 = new ListNode(1);
+            head1.next = new ListNode(2);
+            head1.next.next = new ListNode(3);
+            head1.next.next.next = new ListNode(4);
+            head1.next.next.next.next = new ListNode(5);
+            head1.next.next.next.next.next = head1.next.next; // cycle
 
-            Solution solution = new Solution();
-            boolean hasCycle = solution.hasCycle(head);
-            System.out.println("Linked List has cycle: " + hasCycle);
+            System.out.println("Test Case 1: Cycle expected");
+            System.out.println("Linked List has cycle: " + hasCycle(head1));
+            System.out.println();
+
+            // Test Case 2: No cycle
+            ListNode head2 = new ListNode(10);
+            head2.next = new ListNode(20);
+            head2.next.next = new ListNode(30);
+
+            System.out.println("Test Case 2: No cycle expected");
+            System.out.println("Linked List has cycle: " + hasCycle(head2));
+            System.out.println();
+
+            // Test Case 3: 2-node cycle
+            ListNode head3 = new ListNode(100);
+            head3.next = new ListNode(200);
+            head3.next.next = head3; // cycle to head
+
+            System.out.println("Test Case 3: Cycle expected");
+            System.out.println("Linked List has cycle: " + hasCycle(head3));
         }
     }
 }
