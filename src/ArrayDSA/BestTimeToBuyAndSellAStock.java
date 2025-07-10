@@ -1,4 +1,4 @@
-package ArrayDSA.LeetCode;
+package ArrayDSA;
 
 public class BestTimeToBuyAndSellAStock {
     public int maxProfit(int[] prices) {

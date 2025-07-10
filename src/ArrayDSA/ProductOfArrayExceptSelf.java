@@ -1,4 +1,4 @@
-package ArrayDSA.LeetCode;
+package ArrayDSA;
 
 public class ProductOfArrayExceptSelf {
     public int[] productExceptSelf(int[] nums) {

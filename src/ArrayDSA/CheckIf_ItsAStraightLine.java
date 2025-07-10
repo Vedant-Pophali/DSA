@@ -1,4 +1,4 @@
-package ArrayDSA.LeetCode;
+package ArrayDSA;
 
 public class CheckIf_ItsAStraightLine {
     public boolean onLine(int[] p1,int[] p2, int[] p3){

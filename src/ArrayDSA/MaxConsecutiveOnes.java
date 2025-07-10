@@ -1,4 +1,4 @@
-package ArrayDSA.LeetCode;
+package ArrayDSA;
 public class MaxConsecutiveOnes {
     public static int findMaxConsecutiveOnes(int[] nums) {
         int count=0;

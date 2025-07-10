@@ -1,4 +1,4 @@
-package ArrayDSA.LeetCode;
+package ArrayDSA;
 
 public class SearchInsertPosition {
     public int searchInsert(int[] nums, int target) {

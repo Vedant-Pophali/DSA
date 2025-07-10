@@ -1,4 +1,4 @@
-package ArrayDSA.LeetCode;
+package ArrayDSA;
 public class MaximumProductSubarray {
     public int maxProduct(int[] nums) {
         int maxProd=nums[0];

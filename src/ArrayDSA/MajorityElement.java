@@ -1,4 +1,4 @@
-package ArrayDSA.LeetCode;
+package ArrayDSA;
 public class MajorityElement {
     public static int majorityElement(int[] nums) {
         int mc=nums[0];

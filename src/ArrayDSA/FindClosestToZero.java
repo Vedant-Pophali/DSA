@@ -1,4 +1,4 @@
-package ArrayDSA.LeetCode;
+package ArrayDSA;
 
 public class FindClosestToZero {
     public int findClosestNumber(int[] nums) {

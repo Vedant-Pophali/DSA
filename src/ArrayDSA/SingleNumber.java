@@ -1,4 +1,4 @@
-package ArrayDSA.LeetCode;
+package ArrayDSA;
 
 public class SingleNumber { public static int singleNumber(int[] nums) {
     int result = 0;
