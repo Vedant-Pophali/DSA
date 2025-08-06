@@ -12,4 +12,3 @@ Each folder contains solved questions categorized by DSA concepts like:
 ## ✅ Features
 - ✅ Clean and optimized code  
 - 🗂️ Structured for easy navigation  
-- 📚 Ideal for interview prep and revision
