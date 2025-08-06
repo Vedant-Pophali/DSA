@@ -8,7 +8,6 @@ Each folder contains solved questions categorized by DSA concepts like:
 - Strings
 - Trees
 - Dynamic Programming
-- And more...
 
 ## ✅ Features
 - ✅ Clean and optimized code  
